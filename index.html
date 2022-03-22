@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Bands and/or Artists I should Check Out</h1>
+    <p id="description" class="text-center">Please submit information regarding bands and/or artists that you enjoy listening to. I would love to check them out!</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group" id="name-entry">
+      <label id="name-label" for="name">Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required
+        />
+    </div>
+    <div class="form-group" id="email-entry">
+        <label id="email-label" for="email">E-mail</label>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter your email"
+               required
+               />
+      </div>
+    <div class="form-group" id="age-entry">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input
+               type="number"
+               name="age"
+               id="number"
+               min="10"
+               max="100"
+               class="form-control"
+               placeholder="Age"
+               />
+    </div>
+    <div class="form-group" id="passion-entry">
+     <p id="dropdown-prompt">How passionate are you about music?</p>    
+      <select id="dropdown" name"passion-level" class="form-control" required>
+          <option disabled selected value>Select best description of your passion level.</option>
+          <option value="hate">I actually hate music.</option>
+          <option value="tolerate">I can tolerate most music.</option>
+          <option value="casual">I casually listen to music often.</option>
+          <option value="enjoy">I enjoy music.</option>
+          <option value="love">I love music.</option>
+      </select>
+    </div>
+      
+    <div class="form-group" id="acquisition-entry">
+      <p> How do you typically acquire new music?</p>
+      <label> 
+      <input
+             type="radio"
+             id="physical-store"
+             name="acquisition-method"
+             value="physical-store"
+             checked
+             />Physical Store</label>
+        <label>
+        <input
+               type="radio"
+               id="online-store"
+               name="acquisition-method"
+               value="online-store"
+               />Online Store</label>
+        <input
+               type="radio"
+               id="bootleg"
+               name="acquisition-method"
+               value="bootleg"
+               />Bootleg Recordings</label>
+      </div>
+    <div class="form-group">
+      <p>How do you usually listen to music?<span>(Check all that apply)</span></p>
+      
+      <label
+        ><input
+          name="method"
+          value="basic-headphones"
+          type="checkbox"
+          class="input-checkbox"
+               />Basic Headphones</label>
+      <label>
+        <input
+          name="method"
+          value="Gramophone"
+          type="checkbox"
+          class="input-checkbox"
+               />Gramophone</label>
+       <label>
+        <input
+          name="method"
+          value="home-stereo"
+          type="checkbox"
+          class="input-checkbox"
+               />Home Stereo</label>
+      <label>
+        <input
+          name="method"
+          value="high-end-headphones"
+          type="checkbox"
+          class="input-checkbox"
+               />High-end Headphones</label>
+    </div>
+    
+    <div class="form-group">
+      <p>Any additional thoughts and/or comments?</p>
+      <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comments here..." rows="4" cols="50">Please leave any additional comments here.</textarea>
+      </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+  </form>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- partial -->
+  
+</body>
+</html>

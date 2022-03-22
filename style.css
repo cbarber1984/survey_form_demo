@@ -1,0 +1,187 @@
+/* <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yanone+Kaffesatz"/> */
+
+@import url('https://fonts.googleapis.com/css2? family=Yanone+Kaffeesatz&display=swap');
+
+/* @import url(https://fonts.googleapis.com/css?family=Tangerine); */
+
+:root {
+  --color-teal: #10c2c2;
+  --color-darkteal: #136e6e;
+  --color-darkerteal: #717f80;
+  background-color: #10c2c2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: var(--color-teal);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-teal);
+  background-image: linear-gradient(
+  115deg,
+    rgba(0, 0, 0, 100),
+    rgba(214, 214, 214, 0.7)
+  ),
+    url(https://cdn.pixabay.com/photo/2019/12/18/04/11/dj-4702977_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125 rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  background-color: #136e6e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: .9rem;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form {
+  background: var(--color-darkerteal);
+  padding: 3rem .5rem;
+  border-radius: 5px;
+  color: white;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.37rem;
+  padding: 0.37rem .75rem;
+  color: #071c1c;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: .25rem;
+  transition: border-color 0.15s eas-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control: focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: .5rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #c963c4;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
